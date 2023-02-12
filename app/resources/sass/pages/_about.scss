@@ -1,0 +1,59 @@
+@use "../base-abstracts" as *;
+@use "../abstracts/mixins" as *;
+
+.about {
+  font-family: "roboto";
+  margin-top: 144px;
+  position: relative;
+
+  .center-container {
+    height: 560px;
+  }
+
+  .margin-container {
+    margin: 35px;
+  }
+
+  .header-container {
+    display: flex;
+    height: 190px;
+    margin-bottom: 19px;
+  }
+
+  .title-container {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 400;
+    color: $clr-primary-1;
+    margin-bottom: 23px;
+  }
+
+  p {
+    font-size: 11px;
+    color: #707173c4;
+    margin-bottom: 19px;
+  }
+
+  .image-container {
+    width: 228px;
+    height: 152px;
+    margin-left: auto;
+  }
+
+  .left-container {
+    flex: 1;
+    height: 350px;
+    background-color: $clr-primary-1;
+  }
+
+  .right-container {
+    flex: 1;
+    height: 350px;
+    background-color: $clr-primary-1;
+  }
+
+
+}

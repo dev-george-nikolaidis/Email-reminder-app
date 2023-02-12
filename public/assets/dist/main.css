@@ -1,0 +1,697 @@
+/*!*****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./app/resources/sass/main.scss ***!
+  \*****************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Fresca&family=Roboto:wght@300;400;700&display=swap);
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./app/resources/sass/main.scss (1) ***!
+  \*********************************************************************************************************************************************************************/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar {
+  float: right;
+  margin-top: 38px;
+  font-family: "roboto";
+}
+
+.navbar li {
+  width: 190px;
+  margin-bottom: 5px;
+}
+
+.navbar a {
+  border: 1px solid #fff;
+  display: block;
+  color: #fff;
+  border-right: transparent;
+  padding-left: 10px;
+  font-size: 15px;
+  padding: 4px 0 4px 8px;
+}
+
+.navbar a:hover {
+  background-color: rgb(206, 206, 206);
+  color: #707173;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.header {
+  display: flex;
+}
+
+.line {
+  flex: 1;
+  width: 100%;
+  background-color: #707173;
+  background-color: #fff;
+  border-bottom: 1px solid #707173;
+}
+
+.logo-container {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+}
+
+.logo-line {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #707173;
+}
+
+#logo-text {
+  transform: translateY(20px);
+  margin-left: 8px;
+  font-family: "Fresca";
+  font-size: 68px;
+  color: #707173;
+  letter-spacing: 13px;
+}
+
+.header-right {
+  flex: 1;
+}
+
+.display-appointments {
+  margin: 6px;
+}
+.display-appointments .table-header {
+  border-collapse: separate;
+  text-align: left;
+  font-size: 12px;
+}
+.display-appointments .table-header :nth-child(1) {
+  width: 110px;
+}
+.display-appointments .table-header :nth-child(2) {
+  width: 120px;
+}
+.display-appointments .table-header :nth-child(3) {
+  width: 120px;
+}
+.display-appointments .day {
+  width: 19px;
+}
+.display-appointments .month {
+  width: 19px;
+}
+.display-appointments .description {
+  width: 120px;
+}
+.display-appointments .time-reminder {
+  border: none;
+}
+.display-appointments .data-row {
+  font-size: 12px;
+}
+.display-appointments .data-row td {
+  padding: 2px 0;
+}
+.display-appointments .dot {
+  transform: translateX(-10px);
+  background-color: red;
+}
+.display-appointments .edit:hover,
+.display-appointments .delete:hover {
+  cursor: pointer;
+}
+.display-appointments input {
+  border: none;
+}
+
+.center-container {
+  position: relative;
+  width: 100%;
+  max-width: 610px;
+  height: 390px;
+}
+
+.main-container {
+  margin-top: 45px;
+  display: flex;
+}
+
+.left-container {
+  flex: 1;
+  height: 350px;
+  background-color: #707173;
+}
+
+.box--borders::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #707173;
+  border-bottom: 2px solid #707173;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 0 0 0 6px;
+}
+
+.box--borders::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid #707173;
+  border-bottom: 2px solid #707173;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 0 0 6px 0;
+}
+
+.right-container {
+  flex: 1;
+  height: 350px;
+  background-color: #707173;
+}
+
+li .active {
+  background-color: #fff;
+  color: #707173;
+  border: 1px solid #fff;
+}
+
+.home {
+  margin-top: 144px;
+  position: relative;
+}
+.home form {
+  margin: 0 34px 0 34px;
+  height: 70px;
+  border: 1px solid #979797;
+  font-family: "roboto";
+  font-size: 13px;
+  position: relative;
+}
+.home .errors-container {
+  height: 34px;
+  margin-left: 34px;
+  font-family: "roboto";
+  color: #d32f2f;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-40px);
+}
+.home .input-error {
+  border: 1px solid #d32f2f;
+}
+.home .flex-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 8px;
+}
+.home .form-control-date {
+  width: 115px;
+}
+.home .form-control-date input {
+  margin-top: 2px;
+  width: 28px;
+  height: 17px;
+}
+.home .form-control-date input::-webkit-outer-spin-button,
+.home .orm-control-date input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.home input[type=number] {
+  -moz-appearance: textfield;
+}
+.home .form-control-description input {
+  display: block;
+  margin-top: 2px;
+  width: 144px;
+  height: 17px;
+}
+.home .form-control-time-reminder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 77px;
+}
+.home .form-control-time-reminder label {
+  margin-right: auto;
+}
+.home .form-control-time-reminder select {
+  margin-top: 2px;
+}
+.home .btn-save {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  float: right;
+  margin: 2px 5px 5px 0;
+}
+.home .appointments-container {
+  border: 1px solid #979797;
+  margin: 16px 35px 35px 35px;
+  height: 200px;
+  overflow-y: auto;
+}
+.home .display-user-container {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  font-family: "roboto";
+}
+.home .display-user-container p:first-child {
+  font-weight: 600;
+}
+.home .user-context-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.home .user-icon {
+  margin-right: 8px;
+}
+.home .update-errors-container {
+  height: 34px;
+  margin-left: 34px;
+  font-family: "roboto";
+  color: #d32f2f;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-20px);
+}
+.home .select-update {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+}
+
+.login {
+  margin-top: 144px;
+  position: relative;
+}
+.login .logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.login form {
+  font-family: "roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login .control-container {
+  width: 400px;
+}
+.login form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.login form input {
+  padding: 8px 12px;
+  width: 100%;
+}
+.login .form-error {
+  animation: shake 2.5s both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+.login .form-control {
+  position: relative;
+}
+.login .form-control span {
+  display: block;
+  height: 15px;
+  font-size: 12px;
+  margin: 5px 0;
+  color: #d32f2f;
+}
+.login .input-error {
+  border: 1px solid #d32f2f;
+}
+.login .input-success {
+  border: 1px solid #2e7d32;
+}
+.login .form-error {
+  animation: shake 1s ease-in-out;
+}
+.login .btn-login {
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+  background: none;
+  border: 1px solid #707173;
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0;
+  font-size: 16px;
+  color: #2e7d32;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in-out;
+  font-family: "roboto";
+}
+.login .btn-login:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2e7d32;
+  transition: all 1s;
+  transform: rotateX(90deg);
+  z-index: -1;
+}
+.login .btn-login:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2e7d32;
+  transition: all 1s;
+  transform: rotateY(90deg);
+  z-index: -1;
+}
+.login .btn-login:hover:before {
+  transform: rotateX(0deg);
+}
+.login .btn-login:hover:after {
+  transform: rotateY(0deg);
+}
+.login .btn-login:hover {
+  color: #fff;
+}
+
+.register {
+  margin-top: 144px;
+  position: relative;
+}
+.register .main-container {
+  margin-top: 45px;
+  display: flex;
+}
+.register .logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.register form {
+  font-family: "roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.register .control-container {
+  width: 400px;
+}
+.register form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.register form input {
+  padding: 8px 12px;
+  width: 100%;
+}
+.register .form-error {
+  animation: shake 2.5s both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+.register .form-control {
+  position: relative;
+}
+.register .form-control span {
+  display: block;
+  height: 15px;
+  font-size: 12px;
+  margin: 5px 0;
+  color: #d32f2f;
+}
+.register .input-error {
+  border: 1px solid #d32f2f;
+}
+.register .select-error {
+  border: 1px solid #d32f2f;
+}
+.register .form-error {
+  animation: shake 1s ease-in-out;
+}
+.register .btn-register-form {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+  background: none;
+  border: 1px solid #707173;
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0;
+  font-size: 16px;
+  color: #2e7d32;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in-out;
+  font-family: "roboto";
+}
+.register .btn-register-form:before,
+.register .btn-register-form:after,
+.register .btn-register-form span:before,
+.register .btn-register-form span:after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #2e7d32;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.register .btn-register-form:before {
+  top: 0;
+  left: -25%;
+}
+.register .btn-register-form:after {
+  top: -100%;
+  left: 25%;
+}
+.register .btn-register-form:hover:before {
+  top: 0;
+  left: 0;
+}
+.register .btn-register-form:hover:after {
+  top: 0;
+  left: 25%;
+}
+.register .btn-register-form span:before {
+  top: 0;
+  right: -25%;
+  transition-delay: 0.2s;
+}
+.register .btn-register-form span:after {
+  bottom: -100%;
+  right: 25%;
+}
+.register .btn-register-form:hover span:before {
+  top: 0;
+  right: 0;
+}
+.register .btn-register-form:hover span:after {
+  top: 0;
+  right: 25%;
+}
+.register .btn-register-form:hover {
+  color: #fff;
+}
+.register .register-modal-container {
+  display: block;
+  position: fixed;
+  z-index: 2;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.register .content-modal-container {
+  display: block;
+  background-color: #fff;
+  position: fixed;
+  z-index: 3;
+  width: 420px;
+  height: 260px;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  margin-top: -130px;
+  margin-left: -210px;
+  text-align: center;
+  animation: fadeInDown 1s;
+}
+.register .success-icon {
+  transform: translateY(-30px);
+  width: 100px;
+}
+.register .content-modal-container p {
+  font-family: "roboto";
+  font-size: 20px;
+}
+.register .btn-success-login {
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #707173;
+  text-align: center;
+  width: 250px;
+  transition: all 1s;
+  overflow: hidden;
+  font-family: "roboto";
+  font-size: 18px;
+  padding: 7px 0;
+  color: #2e7d32;
+  border-radius: 5px;
+}
+.register .btn-success-login:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  transition: all 1s;
+  transform: translateX(-100%) rotate(45deg);
+}
+.register .btn-success-login:hover {
+  background-color: #2e7d32;
+  color: #fff;
+}
+.register .btn-success-login:hover:before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+.about {
+  font-family: "roboto";
+  margin-top: 144px;
+  position: relative;
+}
+.about .center-container {
+  height: 560px;
+}
+.about .margin-container {
+  margin: 35px;
+}
+.about .header-container {
+  display: flex;
+  height: 190px;
+  margin-bottom: 19px;
+}
+.about .title-container {
+  width: 300px;
+}
+.about h1 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #707173;
+  margin-bottom: 23px;
+}
+.about p {
+  font-size: 11px;
+  color: rgba(112, 113, 115, 0.768627451);
+  margin-bottom: 19px;
+}
+.about .image-container {
+  width: 228px;
+  height: 152px;
+  margin-left: auto;
+}
+.about .left-container {
+  flex: 1;
+  height: 350px;
+  background-color: #707173;
+}
+.about .right-container {
+  flex: 1;
+  height: 350px;
+  background-color: #707173;
+}
+
+.page403 {
+  margin-top: 144px;
+  position: relative;
+}
+.page403 .forbidden-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.page404 {
+  margin-top: 144px;
+  position: relative;
+}
+.page404 .not-found-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.page500 {
+  margin-top: 144px;
+  position: relative;
+}
+.page500 .server-error-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/*Abstracts*/
+/*Components*/
+/*Global styles*/
+/*Pages*/

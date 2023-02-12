@@ -1,0 +1,134 @@
+@use "../base-abstracts" as *;
+
+.home {
+  margin-top: 144px;
+  position: relative;
+
+  form {
+    margin: 0 34px 0 34px;
+    height: 70px;
+    border: 1px solid #979797;
+    font-family: "roboto";
+    font-size: 13px;
+    position: relative;
+  }
+
+  // Errors
+
+  .errors-container {
+    height: 34px;
+    margin-left: 34px;
+    font-family: "roboto";
+    color: $clr-error;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-40px);
+  }
+
+  .input-error {
+    border: 1px solid $clr-error;
+  }
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 8px;
+  }
+
+  .form-control-date {
+    width: 115px;
+  }
+
+  .form-control-date input {
+    margin-top: 2px;
+    width: 28px;
+    height: 17px;
+  }
+
+  .form-control-date input::-webkit-outer-spin-button,
+  .orm-control-date input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    // margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .form-control-description input {
+    display: block;
+    margin-top: 2px;
+    width: 144px;
+    height: 17px;
+  }
+
+  .form-control-time-reminder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 77px;
+  }
+
+  .form-control-time-reminder label {
+    margin-right: auto;
+  }
+
+  .form-control-time-reminder select {
+    margin-top: 2px;
+  }
+
+  .btn-save {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin: 2px 5px 5px 0;
+  }
+
+  .appointments-container {
+    border: 1px solid #979797;
+    margin: 16px 35px 35px 35px;
+    height: 200px;
+    overflow-y: auto;
+  }
+
+  //user-context-container
+  .display-user-container {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    font-family: "roboto";
+  }
+
+  .display-user-container p:first-child {
+    font-weight: 600;
+  }
+
+  .user-context-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .user-icon {
+    margin-right: 8px;
+  }
+
+  .update-errors-container {
+    height: 34px;
+    margin-left: 34px;
+    font-family: "roboto";
+    color: $clr-error;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-20px);
+  }
+
+  .select-update {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: none;
+    border: none;
+  }
+}

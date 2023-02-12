@@ -1,0 +1,59 @@
+@use "../base-abstracts" as *;
+
+.display-appointments {
+  margin: 6px;
+
+  .table-header {
+    border-collapse: separate;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .table-header :nth-child(1) {
+    width: 110px;
+  }
+
+  .table-header :nth-child(2) {
+    width: 120px;
+  }
+  .table-header :nth-child(3) {
+    width: 120px;
+  }
+  .table-header :nth-child(4) {
+  }
+
+  .day {
+    width: 19px;
+  }
+  .month {
+    width: 19px;
+  }
+  .description {
+    width: 120px;
+  }
+
+  .time-reminder {
+    border: none;
+  }
+
+  .data-row {
+    font-size: 12px;
+  }
+
+  .data-row td {
+    padding: 2px 0;
+  }
+
+  .dot {
+    transform: translateX(-10px);
+    background-color: red;
+  }
+
+  .edit:hover,
+  .delete:hover {
+    cursor: pointer;
+  }
+  input {
+    border: none;
+  }
+}

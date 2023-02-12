@@ -1,0 +1,39 @@
+@use "../base-abstracts" as *;
+
+.header {
+  display: flex;
+}
+
+.line {
+  flex: 1;
+  width: 100%;
+  background-color: $clr-primary-1;
+  background-color: #fff;
+  border-bottom: 1px solid $clr-primary-1;
+}
+
+.logo-container {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+}
+
+.logo-line {
+  width: 100%;
+  display: block;
+
+  border-bottom: 1px solid $clr-primary-1;
+}
+
+#logo-text {
+  transform: translateY(20px);
+  margin-left: 8px;
+  font-family: "Fresca";
+  font-size: 68px;
+  color: $clr-primary-1;
+  letter-spacing: 13px;
+}
+
+.header-right {
+  flex: 1;
+}

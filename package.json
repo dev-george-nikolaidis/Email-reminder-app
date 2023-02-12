@@ -1,0 +1,26 @@
+{
+"name": "calendar",
+"version": "1.0.0",
+"description": "Calendar reminder",
+"main": "index.js",
+"scripts": {
+"dev": "webpack --watch"
+},
+"author": "Dev.Geo",
+"license": "MIT",
+"devDependencies": {
+"mini-css-extract-plugin": "^2.6.1",
+"postcss": "^8.4.16",
+"postcss-loader": "^7.0.1",
+"postcss-preset-env": "^7.8.2",
+"sass": "^1.54.9",
+"sass-loader": "^13.0.2",
+"webpack": "^5.74.0",
+"webpack-cli": "^4.10.0",
+"webpack-dev-server": "^4.11.0"
+},
+"dependencies": {
+"css-loader": "^6.7.1",
+"style-loader": "^3.3.1"
+}
+}

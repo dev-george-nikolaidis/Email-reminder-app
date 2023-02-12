@@ -1,0 +1,13 @@
+@use "../base-abstracts" as *;
+
+.page403 {
+  margin-top: 144px;
+  position: relative;
+
+  .forbidden-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+}
