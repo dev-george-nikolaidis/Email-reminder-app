@@ -2,6 +2,9 @@
 define("APP_ROOT", dirname(dirname(__FILE__)));
 define("APP_NAME", "Calendar Reminder");
 
+define("EMAIL_ADDRESS", "yourEmailAddress");
+define("EMAIL_PASSWORD", "yourEmailPASSWORD");
+
 
 // Database Params
 define("DB_HOST", "localhost");

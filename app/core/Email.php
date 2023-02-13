@@ -17,7 +17,7 @@ class Email extends Controller
     public function __construct()
     {
         $this->appointmentModel = $this->model("Appointment");
-        $data = $this->fetchAllAppointmentsToBeNotified();;
+        $data = $this->fetchAllAppointmentsToBeNotified();
 
 
         if (count($data) > 0) {
@@ -54,21 +54,22 @@ class Email extends Controller
         $mail->SMTPSecure = "tls";
         $mail->Port       = 587;
         $mail->Host       = "smtp.gmail.com";
-        $mail->Username   = "testemail445055@gmail.com";
-        $mail->Password   = "ahtptusfdakyftzg";
+        $mail->Username   = EMAIL_ADDRESS;
+        $mail->Password   = EMAIL_PASSWORD;
         $mail->Subject = "Appointment reminder";
 
         $mail->IsHTML(true);
         $mail->AddAddress($emailRecipient);
-        $mail->SetFrom("testemail445055@gmail.com");
+        $mail->SetFrom(EMAIL_ADDRESS);
         $mail->Body = $messageBody;
 
         if (!$mail->send()) {
+            $mail->smtpClose();
             return false;
         } else {
+            $mail->smtpClose();
             return true;
         }
-        $mail->smtpClose();
     }
 
     private function fetchAllAppointmentsToBeNotified()
