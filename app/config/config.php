@@ -4,6 +4,7 @@ define("APP_NAME", "Calendar Reminder");
 
 define("EMAIL_ADDRESS", "yourEmailAddress");
 define("EMAIL_PASSWORD", "yourEmailPASSWORD");
+define("LANGUAGE_MESSAGES","German");
 
 
 // Database Params
